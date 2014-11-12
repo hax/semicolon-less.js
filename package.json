@@ -1,0 +1,25 @@
+{
+  "name": "semicolon-less",
+  "version": "0.1.0",
+  "description": ";-less.js  // Make your JavaScript Code Semicolon-less",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "-less": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hax/semicolon-less.js.git"
+  },
+  "keywords": [
+    "semicolon"
+  ],
+  "author": "hax <johnhax@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hax/semicolon-less.js/issues"
+  },
+  "homepage": "https://github.com/hax/semicolon-less.js"
+}
