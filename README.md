@@ -16,12 +16,16 @@
 ## Usage
 
 ### Install
-```bash
+```sh
 npm install -g semicolon-less
 ```
 
 ### CLI
-```bash
+```sh
+semicolon-less src/*.js
+```
+
+```sh
 -less src/*.js
 ```
 
@@ -32,15 +36,8 @@ var less = require('semicolon-less')
 // source can be a string or buffer or stream which contains the source code
 var source = require('fs').readFileSync('source.js')
 
-// less() return a promise of transformed source
-less(source).then(function (semicolonlessSource) {
-	...
-})
-
-// traditional callback style is also supported
-less(source, function (err, semicolonlessSource) {
-	...
-})
+// less() return transformed source
+var semicolonlessSource = less(source)
 ```
 
 ### Gulp friendly
