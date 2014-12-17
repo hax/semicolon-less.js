@@ -1,6 +1,6 @@
 {
   "name": "semicolon-less",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": ";-less.js  // Make your JavaScript Code Semicolon-less",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/hax/semicolon-less.js",
   "dependencies": {
-    "semi": "^3.1.0",
+    "semi": "^3.1.1",
     "uglify-js": "^2.4"
   },
   "devDependencies": {
