@@ -26,14 +26,19 @@ Object.keys(spec).forEach(function (name) {
 require('./test')
 
 function _it(msg0, transform, warn) {
+	var skip0 = isSkip(msg0)
 	return function (msg, cases) {
+		var skip1 = skip0
 		if (cases === undefined) {
 			cases = msg
 			msg = msg0
 		} else {
 			msg = msg0 + ' ' + msg
+			skip1 = skip1 || isSkip(msg)
 		}
 		Object.keys(cases).forEach(function (k) {
+			var skip = skip1 || isSkip(k)
+			var test = skip ? it.skip : it
 			var v = cases[k], source, expect
 			if (typeof v === 'object') {
 				source = v.source
@@ -56,7 +61,7 @@ function _it(msg0, transform, warn) {
 				+ ' => '
 				+ JSON.stringify(expect)
 
-			it(message, function () {
+			test(message, function () {
 				var actual = less(source, {onwarn: record})
 				assert.equal (actual, expect)
 				if (warn) assert.ok (warnings.length > 0)
@@ -65,4 +70,9 @@ function _it(msg0, transform, warn) {
 			})
 		})
 	}
+}
+
+function isSkip(s) {
+	console.log(s)
+	return /^\s*\/\//.test(s)
 }
