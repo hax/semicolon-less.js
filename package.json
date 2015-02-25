@@ -8,7 +8,7 @@
   },
   "bin": {
     "semicolon-less": "./cli.js",
-    ";-less": "./cli.js"
+    "-less": "./cli.js"
   },
   "repository": {
     "type": "git",
