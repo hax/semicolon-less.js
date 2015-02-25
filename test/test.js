@@ -32,7 +32,7 @@ describe(';-less (special cases)', function () {
 })
 
 
-describe(';-less (edge cases: directive prologue', function () {
+describe(';-less (edge cases: directive prologue)', function () {
 	it.should_remove('~; of', {
 		'use strict directive' : 'function f() { "use strict";\nx }'
 	})
@@ -102,7 +102,7 @@ describe(';-less (edge cases: do...while)', function () {
 	})
 })
 
-describe(';-less (edge cases: declarations)', function () {		
+describe(';-less (edge cases: declarations)', function () {
 	it.should_prepend(';~ after', {
 		'var declaration'        : 'var a, b\n-x',
 		'function declaration'   : 'function f() {}\n-x',
@@ -121,7 +121,7 @@ describe(';-less (edge cases: multi-line comment)', function () {
 	})
 	it.should_warn_and_prepend({
 		'; after comment span multiple lines': {
-			source: 'x /* ...\n */ -x', 
+			source: 'x /* ...\n */ -x',
 			expect: 'x /* ...\n */ ;-x'
 		}
 	})

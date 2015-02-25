@@ -1,4 +1,4 @@
-var fs = require('fs')
+'use strict'
 
 var assert = require('assert')
 var less = require('../')
