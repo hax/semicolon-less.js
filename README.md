@@ -1,6 +1,13 @@
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
+[![Downloads][downloads-image]][npm-url]
+
 # ;-less.js // Make your JavaScript Code Semicolon-less
 
+
 ## Rationale
+
 ### You don't need semicolons in most cases
 
 ### Write semicolons in *ONLY* 5 cases
@@ -12,6 +19,7 @@
  - `;(less)	// line starts with grouping operator, such as IIFE`
 
 NOTE: In real-world, only the last case is common.
+
 
 ## Usage
 
@@ -47,6 +55,7 @@ All `semicolon-less` can be replaced by the shortcut `-less`, for example, to sh
 -less --help
 ```
 
+
 ### API
 ```js
 var less = require('semicolon-less')
@@ -58,6 +67,7 @@ var source = require('fs').readFileSync('source.js')
 var semicolonlessSource = less(source)
 ```
 
+
 ### Gulp friendly
 ```js
 var gulp = require('gulp')
@@ -65,6 +75,7 @@ var less = require('semicolon-less/gulpplugin')
 
 gulp.src('*.js').pipe(less)
 ```
+
 
 ## Bugs and limitations
 
@@ -77,3 +88,12 @@ Ok;
 You must use Issac's awesome [semicolons](https://www.npmjs.org/package/semicolons) package;
 > Ensure that all JavaScript programs have the maximum amount of safety;
 > when you require("semicolons"), THEY ARE REQUIRED;
+
+
+[npm-image]: https://img.shields.io/npm/v/semicolon-less.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/semicolon-less
+[travis-image]: https://img.shields.io/travis/hax/semicolon-less/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/hax/semicolon-less
+[coveralls-image]: https://img.shields.io/coveralls/hax/semicolon-less/master.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/hax/semicolon-less?branch=master
+[downloads-image]: http://img.shields.io/npm/dm/semicolon-less.svg?style=flat-square
