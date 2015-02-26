@@ -73,6 +73,5 @@ function _it(msg0, transform, warn) {
 }
 
 function isSkip(s) {
-	console.log(s)
 	return /^\s*\/\//.test(s)
 }
