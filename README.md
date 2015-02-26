@@ -11,7 +11,7 @@
  - `;[less]	// line starts with array initializer`
  - `;(less)	// line starts with grouping operator, such as IIFE`
 
- NOTE: In real-world, only the last case are common.
+NOTE: In real-world, only the last case are common.
 
 ## Usage
 
