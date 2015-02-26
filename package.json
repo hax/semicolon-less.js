@@ -15,7 +15,9 @@
     "url": "https://github.com/hax/semicolon-less.js.git"
   },
   "keywords": [
-    "semicolon"
+    "semicolon",
+    "asi",
+    "gulpplugin"
   ],
   "author": "hax <johnhax@gmail.com>",
   "license": "ISC",

@@ -10,7 +10,7 @@
 	* `;/less/	// line starts with regexp literal`
 	* `;[less]	// line starts with array initializer`
 	* `;(less)	// line starts with grouping operator, such as IIFE`
- 
+
  NOTE: In real-world, only the last case are common.
 
 ## Usage
@@ -43,7 +43,7 @@ var semicolonlessSource = less(source)
 ### Gulp friendly
 ```js
 var gulp = require('gulp')
-var less = require('semicolon-less')
+var less = require('semicolon-less/gulp')
 
 gulp.src('*.js').pipe(less)
 
@@ -51,7 +51,7 @@ gulp.src('*.js').pipe(less)
 
 ## I don't agree with you; semicolons are REQUIRED!
 
-Ok; 
+Ok;
 You must use Issac's awesome [semicolons](https://www.npmjs.org/package/semicolons) package;
 > Ensure that all JavaScript programs have the maximum amount of safety;
 > when you require("semicolons"), THEY ARE REQUIRED;

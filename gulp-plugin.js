@@ -7,15 +7,11 @@ module.exports = function (options) {
 	return new Transform({
 		objectMode: true,
 		transform: function (file, enc, next) {
-
-			if (file.isNull()) {
-				// do nothing
-			} else if (file.isBuffer()) {
+			if (file.isBuffer()) {
 				file.contents = less(file.contents, options)
 			} else if (file.isStream()) {
+				file.on('error', this.emit.bind(this, 'error'))
 				file.contents = less(file.contents, options)
-			} else {
-				// do nothing
 			}
 			this.push(file)
 			return next()
