@@ -4,4 +4,4 @@ Usage:
   semicolon-less [-]
   semicolon-less [--out=<dest>] <src>...
   semicolon-less -h | --help
-  semicolon-less -v | --version
+  semicolon-less --version

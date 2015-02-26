@@ -21,12 +21,30 @@ npm install -g semicolon-less
 ```
 
 ### CLI
+
+Convert `test.js` to semicolon-less style
 ```sh
-semicolon-less src/*.js
+semicolon-less test.js
 ```
 
+Convert all js files to semicolon-less and output to `dest` directory
 ```sh
--less src/*.js
+semicolon-less --out=dest *.js
+```
+
+Support pipe
+```sh
+echo 'let x = 1' | babel | semicolon-less
+```
+
+Read source code form stdin
+```sh
+semicolon-less -
+```
+
+All `semicolon-less` can be replaced by the shortcut `-less`, for example, to show the help:
+```sh
+-less --help
 ```
 
 ### API
