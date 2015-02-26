@@ -92,8 +92,8 @@ You must use Issac's awesome [semicolons](https://www.npmjs.org/package/semicolo
 
 [npm-image]: https://img.shields.io/npm/v/semicolon-less.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/semicolon-less
-[travis-image]: https://img.shields.io/travis/hax/semicolon-less/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/hax/semicolon-less
-[coveralls-image]: https://img.shields.io/coveralls/hax/semicolon-less/master.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/hax/semicolon-less?branch=master
+[travis-image]: https://img.shields.io/travis/hax/semicolon-less.js/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/hax/semicolon-less.js
+[coveralls-image]: https://img.shields.io/coveralls/hax/semicolon-less.js/master.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/hax/semicolon-less.js?branch=master
 [downloads-image]: http://img.shields.io/npm/dm/semicolon-less.svg?style=flat-square
