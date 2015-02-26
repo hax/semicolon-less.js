@@ -26,7 +26,7 @@ function semicolonless(source, options) {
 			read: function () {}
 		})
 		result._read = function () {}	// should be removed after readable-stream
-			//support simplified constructor api
+			// support simplified constructor api
 		var sourceStr = ''
 		source.setEncoding('utf8')
 		source.on('data', function (chunk) {
