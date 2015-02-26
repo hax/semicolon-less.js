@@ -18,12 +18,13 @@ var spec = {
 	},
 }
 
-Object.keys(spec).forEach(function (name) {
-	it['should_' + name] = _it('should ' + name, spec[name])
-	it['should_warn_and_' + name] = _it('should warn and ' + name, spec[name], TEST_WARN)
-})
+module.exports = function (it) {
+	Object.keys(spec).forEach(function (name) {
+		it['should_' + name] = _it('should ' + name, spec[name])
+		it['should_warn_and_' + name] = _it('should warn and ' + name, spec[name], TEST_WARN)
+	})
+}
 
-require('./test')
 
 function _it(msg0, transform, warn) {
 	var skip0 = isSkip(msg0)

@@ -1,3 +1,6 @@
+require('./ext')(it)
+
+
 describe(';-less (common cases)', function () {
 	it.should_remove({
 		'~; before new line'    : 'x;\nx',
