@@ -43,10 +43,9 @@ var semicolonlessSource = less(source)
 ### Gulp friendly
 ```js
 var gulp = require('gulp')
-var less = require('semicolon-less/gulp')
+var less = require('semicolon-less/gulpplugin')
 
 gulp.src('*.js').pipe(less)
-
 ```
 
 ## I don't agree with you; semicolons are REQUIRED!
