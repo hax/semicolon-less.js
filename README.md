@@ -66,6 +66,11 @@ var less = require('semicolon-less/gulpplugin')
 gulp.src('*.js').pipe(less)
 ```
 
+## Bugs and limitations
+
+Currently I'm using [yyx990803/semi](https://github.com/yyx990803/semi) as underground implementation, and it doesn't support some ES6 syntax (eg. for-of, generators. See the skipped [tests](https://github.com/hax/semicolon-less.js/blob/master/test/test.js)). We will solve it in the future.
+
+
 ## I don't agree with you; semicolons are REQUIRED!
 
 Ok;
