@@ -82,6 +82,15 @@ gulp.src('*.js').pipe(less)
 Currently I'm using [yyx990803/semi](https://github.com/yyx990803/semi) as underground implementation, and it doesn't support some ES6 syntax (eg. for-of, generators. See the skipped [tests](https://github.com/hax/semicolon-less.js/blob/master/test/test.js)). We will solve it in the future.
 
 
+## I want to convert semicolon-less style back to semicolon-itis style
+
+It's totally unnecessary and not the scope of this project. But if you really
+want it due to some reasons (ie. your boss/team/IDEs/tools insist on semicolon-itis style), use [yyx990803/semi](https://github.com/yyx990803/semi).
+
+In fact, most js code generators will add semicolons as <abbr title="Automatic Semicolon Insertion">ASI</abbr> rules. So you could just
+use [uglifyjs](https://github.com/mishoo/UglifyJS) to regenerate your codes.
+
+
 ## I don't agree with you; semicolons are REQUIRED!
 
 Ok;
