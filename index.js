@@ -27,9 +27,11 @@ function semicolonless(source, options) {
 		})
 		result._read = function () {}	// should be removed after readable-stream
 			// support simplified constructor api
-		source = new Readable({
-			encoding: 'utf8'
-		}).wrap(source)
+		if (!source.read) {
+			source = new Readable({
+				encoding: 'utf8'
+			}).wrap(source)
+		}
 		var sourceStr = ''
 		source.on('readable', function () {
 			var str = source.read()
