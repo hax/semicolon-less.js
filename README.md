@@ -1,6 +1,7 @@
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
+[![Codacy badge][codacy-image]][codacy-url]
 [![Downloads][downloads-image]][npm-url]
 
 # ;-less.js // Make your JavaScript Code Semicolon-less
@@ -106,3 +107,5 @@ You must use Issac's awesome [semicolons](https://www.npmjs.org/package/semicolo
 [coveralls-image]: https://img.shields.io/coveralls/hax/semicolon-less.js/master.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/hax/semicolon-less.js?branch=master
 [downloads-image]: http://img.shields.io/npm/dm/semicolon-less.svg?style=flat-square
+[codacy-image]: https://www.codacy.com/project/badge/12ebe2ff5dd0429ca51c78b69955a4ad
+[codacy-url]: https://www.codacy.com/public/hax/semicolon-less.js
