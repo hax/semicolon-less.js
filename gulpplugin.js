@@ -14,7 +14,7 @@ module.exports = function (options) {
 		if (file.isBuffer()) {
 			file.contents = less(file.contents, options)
 		} else if (file.isStream()) {
-			file.on('error', this.emit.bind(this, 'error'))
+			file.contents.on('error', this.emit.bind(this, 'error'))
 			file.contents = less(file.contents, options)
 		}
 		this.push(file)
