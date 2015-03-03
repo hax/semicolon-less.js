@@ -1,3 +1,5 @@
+'use strict'
+
 var assert = require('assert')
 var util = require('gulp-util')
 var less = require('../gulpplugin')

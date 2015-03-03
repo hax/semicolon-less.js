@@ -64,8 +64,8 @@ function _it(msg0, transform, warn) {
 
 			test(message, function () {
 				var actual = less(source, {onwarn: record})
-				assert.equal (actual, expect)
-				if (warn) assert.ok (warnings.length > 0)
+				assert.equal(actual, expect)
+				if (warn) assert.ok(warnings.length > 0)
 				//new Function(source)
 				//new Function(expect)
 			})

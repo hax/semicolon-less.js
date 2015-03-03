@@ -8,7 +8,7 @@ var tty = require('tty')
 var pkg = require('../package.json')
 var less = require('../')
 
-var definitions = fs.readFileSync(__dirname + '/docopt', 'utf-8')
+var definitions = fs.readFileSync(path.resolve(__dirname, 'docopt'), 'utf-8')
 var options = docopt(definitions, {version: pkg.version})
 
 if (options['-'] || !tty.isatty(process.stdin.fd)) {
@@ -19,7 +19,7 @@ if (options['-'] || !tty.isatty(process.stdin.fd)) {
 	options['<src>'].forEach(function (f) {
 		var input = fs.createReadStream(f)
 		var destFile = path.resolve(dest, f)
-		fs.ensureFile(destFile, function (err, data) {
+		fs.ensureFile(destFile, function (err) {
 			if (err) throw err
 			var output = fs.createWriteStream(destFile)
 			less(input).pipe(output)
