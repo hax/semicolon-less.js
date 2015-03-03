@@ -21,7 +21,7 @@ if (options['<src>'].length > 0) {
 	console.log(options['<src>'])
 	options['<src>'].forEach(function (f) {
 		var input = fs.createReadStream(f)
-		var destFile = path.join(dest, f)
+		var destFile = path.resolve(dest, f)
 		fs.ensureFile(destFile, function (err, data) {
 			if (err) throw err
 			var output = fs.createWriteStream(destFile)
@@ -30,5 +30,3 @@ if (options['<src>'].length > 0) {
 	})
 	return
 }
-
-console.log(definitions)
