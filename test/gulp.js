@@ -5,6 +5,10 @@ var Readable = require('readable-stream').Readable
 
 describe('gulpplugin', function () {
 
+	it('should fail', function (done) {
+
+	})
+
 	it('should convert buffer to semicolon-less style', function (done) {
 
 		var testCode = "(function () {\n\t'use strict';\n\tconsole.log('Hello world!');\n})();"
