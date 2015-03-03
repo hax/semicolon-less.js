@@ -13,10 +13,7 @@ var options = docopt(definitions, {version: pkg.version})
 
 if (options['-'] || !tty.isatty(process.stdin.fd)) {
 	less(process.stdin).pipe(process.stdout)
-	return
-}
-
-if (options['<src>'].length > 0) {
+} else if (options['<src>'].length > 0) {
 	var dest = options['--out'] || '.'
 	console.log(options['<src>'])
 	options['<src>'].forEach(function (f) {
@@ -28,5 +25,4 @@ if (options['<src>'].length > 0) {
 			less(input).pipe(output)
 		})
 	})
-	return
 }
