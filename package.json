@@ -1,6 +1,6 @@
 {
   "name": "semicolon-less",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": ";-less.js  // Make your JavaScript Code Semicolon-less",
   "main": "index.js",
   "scripts": {
