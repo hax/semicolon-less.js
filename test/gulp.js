@@ -2,7 +2,6 @@ var assert = require('assert')
 var util = require('gulp-util')
 var less = require('../gulpplugin')
 var Readable = require('readable-stream').Readable
-var Transform = require('readable-stream').Transform
 
 describe('gulpplugin', function () {
 
