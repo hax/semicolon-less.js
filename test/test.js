@@ -57,7 +57,7 @@ describe(';-less (edge cases: block and empty statement)', function () {
 		'while'   : 'while (test) {};',
 		'for'     : { source: 'for (;;) {};', expect: 'for (;;) {}' },
 		'for-in'  : 'for (key in obj) {};',
-		'//for-of'  : 'for (value of obj) {};',
+		'for-of'  : 'for (value of obj) {};',
 	})
 	it.should_prepend(';~ after', {
 		'block'   : '{}\n-x',
@@ -66,7 +66,7 @@ describe(';-less (edge cases: block and empty statement)', function () {
 		'while'   : 'while (test) {}\n-x',
 		'for'     : 'for (;;) {}\n-x',
 		'for-in'  : 'for (key in obj) {}\n-x',
-		'//for-of'  : 'for (value of obj) {}\n-x',
+		'for-of'  : 'for (value of obj) {}\n-x',
 	})
 	it.should_warn_and_unchange('empty statement in', {
 		'if'      : 'if (test) ;',
@@ -112,7 +112,7 @@ describe(';-less (edge cases: declarations)', function () {
 		'var declaration'        : 'var a, b\n-x',
 		'function declaration'   : 'function f() {}\n-x',
 		'let declaration'        : 'let a, b\n-x',
-		'//generator declaration'  : 'function *g() {}\n-x',
+		'generator declaration'  : 'function *g() {}\n-x',
 		'//class declaration'      : 'class c {}\n-x',
 	})
 })
