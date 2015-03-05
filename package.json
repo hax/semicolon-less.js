@@ -31,7 +31,7 @@
     "fs-extra": "^0.16.3",
     "isstream": "^0.1.1",
     "readable-stream": "^1.1.13",
-    "semi": "^3.1.2"
+    "semi": "hax/semi"
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
