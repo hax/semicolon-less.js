@@ -74,7 +74,7 @@ var semicolonlessSource = less(source)
 var gulp = require('gulp')
 var less = require('semicolon-less/gulpplugin')
 
-gulp.src('*.js').pipe(less)
+gulp.src('*.js').pipe(less())
 ```
 
 
