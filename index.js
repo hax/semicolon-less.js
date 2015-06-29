@@ -11,7 +11,7 @@ var Readable = require('readable-stream').Readable
 var isReadable = require('isstream').isReadable
 
 module.exports = semicolonless
-function semicolonless(source, options) {
+function semicolonless(source/*, options*/) {
 
 	if (typeof source === 'string') {
 		return removeSemicolons(source)
@@ -23,7 +23,7 @@ function semicolonless(source, options) {
 
 	if (isReadable(source)) {
 		var result = new Readable({
-			read: function () {}
+			read: function () {},
 		})
 		result._read = function () {}	// should be removed after readable-stream
 			// support simplified constructor api

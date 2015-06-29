@@ -3,13 +3,11 @@
     node: true
 
   rules:
-    semi: never
-    quotes: single avoid-escape
-    no-use-before-define: nofunc
-    curly: 2 multi-line
+    semi: [2, never]
+    quotes: [2, single, avoid-escape]
+    no-use-before-define: [2, nofunc]
+    curly: [2, multi-line]
     no-underscore-dangle: 0
-    no-comma-dangle: 0
+    comma-dangle: [2, always-multiline]
     new-parens: 0
-    no-unused-vars: 1
-    no-spaced-func: 1
-    key-spacing: 1 align colon
+    key-spacing: 1

@@ -1,3 +1,4 @@
+/* eslint key-spacing: 0 */
 'use strict'
 
 require('./ext')(it)
@@ -39,16 +40,16 @@ describe(';-less (special cases)', function () {
 
 describe(';-less (edge cases: directive prologue)', function () {
 	it.should_remove('~; of', {
-		'use strict directive' : 'function f() { "use strict";\nx }'
+		'use strict directive' : 'function f() { "use strict";\nx }',
 	})
 	it.should_shift('~; to ;~ after', {
-		'use strict directive' : 'function f() { "use strict";\n-x }'
+		'use strict directive' : 'function f() { "use strict";\n-x }',
 	})
 })
 
 describe(';-less (edge cases: block and empty statement)', function () {
 	it.should_remove({
-		'empty statement': ';'
+		'empty statement': ';',
 	})
 	it.should_remove('redundant ; after', {
 		'block'   : '{};',
@@ -97,13 +98,13 @@ describe(';-less (edge cases: only statement)', function () {
 
 describe(';-less (edge cases: do...while)', function () {
 	it.should_remove({
-		'~; after do...while'        : 'do {} while (i--);\nx'
+		'~; after do...while'        : 'do {} while (i--);\nx',
 	})
 	it.should_prepend({
-		';~ after do...while'        : 'do {} while (i--)\n-x'
+		';~ after do...while'        : 'do {} while (i--)\n-x',
 	})
 	it.should_shift({
-		'~; to ;~ after do...while'  : 'do {} while (i--);\n-x'
+		'~; to ;~ after do...while'  : 'do {} while (i--);\n-x',
 	})
 })
 
@@ -119,15 +120,15 @@ describe(';-less (edge cases: declarations)', function () {
 
 describe(';-less (edge cases: multi-line comment)', function () {
 	it.should_unchange({
-		'; before inline comment': 'a; /* ... */ b'
+		'; before inline comment': 'a; /* ... */ b',
 	})
 	it.should_warn_and_remove({
-		'; before comment span multiple lines': 'x; /* ...\n */ x'
+		'; before comment span multiple lines': 'x; /* ...\n */ x',
 	})
 	it.should_warn_and_prepend({
 		'//; after comment span multiple lines': {
 			source: 'x /* ...\n */ -x',
-			expect: 'x /* ...\n */ ;-x'
-		}
+			expect: 'x /* ...\n */ ;-x',
+		},
 	})
 })

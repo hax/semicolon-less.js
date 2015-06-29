@@ -12,7 +12,7 @@ describe('gulpplugin', function () {
 		var testCode = "(function () {\n\t'use strict';\n\tconsole.log('Hello world!');\n})();"
 
 		var fakeFile = new util.File({
-			contents: new Buffer(testCode)
+			contents: new Buffer(testCode),
 		})
 
 		var t = less()
@@ -34,7 +34,7 @@ describe('gulpplugin', function () {
 		readable._read = function () {}
 
 		var fakeFile = new util.File({
-			contents: readable
+			contents: readable,
 		})
 
 		var t = less()
