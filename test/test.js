@@ -114,7 +114,7 @@ describe(';-less (edge cases: declarations)', function () {
 		'function declaration'   : 'function f() {}\n-x',
 		'let declaration'        : 'let a, b\n-x',
 		'generator declaration'  : 'function *g() {}\n-x',
-		'//class declaration'      : 'class c {}\n-x',
+		'class declaration'      : 'class c {}\n-x',
 	})
 })
 
