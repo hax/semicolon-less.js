@@ -6,6 +6,8 @@
 
 # ;-less.js // Make your JavaScript Code Semicolon-less
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hax/semicolon-less.js.svg)](https://greenkeeper.io/)
+
 
 ## Rationale
 
