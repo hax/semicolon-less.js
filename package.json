@@ -30,7 +30,7 @@
     "docopt": "^0.6.2",
     "fs-extra": "^5.0.0",
     "isstream": "^0.1.1",
-    "readable-stream": "^2.0.0",
+    "readable-stream": "^3.0.5",
     "semi": "^4.0.3"
   },
   "devDependencies": {
