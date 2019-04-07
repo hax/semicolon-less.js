@@ -38,6 +38,6 @@
     "gulp-util": "^3.0.4",
     "istanbul": "^0.4.5",
     "istanbul-coveralls": "^1.0.1",
-    "mocha": "^4.1.0"
+    "mocha": "^6.1.0"
   }
 }
