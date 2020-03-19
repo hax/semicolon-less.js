@@ -34,7 +34,7 @@
     "semi": "^4.0.3"
   },
   "devDependencies": {
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.0.11",
     "gulp-util": "^3.0.4",
     "istanbul": "^0.4.5",
     "istanbul-coveralls": "^1.0.1",
